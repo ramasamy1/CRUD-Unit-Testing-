@@ -10,6 +10,7 @@ In unit test case mainly need to focus on creating mock object and stubbing,once
 
 The target class(mostly,DAO class) method what it should return,need give in external manner,then need to do stubbing,target class methods will be called inside the when condition and it will return (thenReturn) external given excepted result.
 
+         when(dao.findById(1)).thenReturn(context);
 
 Then to do so far assert that it means need to check equals or not.
 
